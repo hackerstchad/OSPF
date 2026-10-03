@@ -1,19 +1,13 @@
 # `OSPF` — Open Shortest Path First
 
-```
-  ___  ____   ____ ____  _____ 
- / _ \/ ___| / ___|  _ \|  ___|
-| | | \___ \| |   | |_) | |_   
-| |_| |___) | |___|  __/|  _|  
- \___/|____/ \____|_|   |_|    
-```
+
 
 > **Le protocole de routage à état de lien le plus déployé au monde.**  
 > Conçu, écrit et présenté par **`hackers_tchad`** — pour les hackers, les ingénieurs réseau et les curieux du monde entier.
 
 ---
 
-## 🧬 Vue d'ensemble
+##  Vue d'ensemble
 
 | Propriété | Valeur |
 |-----------|--------|
@@ -30,7 +24,7 @@
 
 ---
 
-## 📚 Table des matières
+##  Table des matières
 
 1. [Introduction](#introduction)
 2. [Historique](#historique)
@@ -59,7 +53,7 @@
 
 ---
 
-## 🌍 Introduction
+##  Introduction
 
 **OSPF** est un protocole de routage **intérieur (IGP)** qui utilise l'algorithme de **Dijkstra** pour calculer le plus court chemin dans un graphe de réseau. Contrairement aux protocoles à vecteur de distance (RIP, EIGRP ancien), OSPF connaît la **topologie complète** du réseau grâce aux **LSA**.
 
@@ -79,7 +73,7 @@
 
 ---
 
-## 🕰️ Historique
+##  Historique
 
 | Année | Événement |
 |-------|-----------|
@@ -100,7 +94,7 @@
 
 ---
 
-## 🔢 Versions d'OSPF
+##  Versions d'OSPF
 
 ### OSPFv2
 
@@ -127,7 +121,7 @@
 
 ---
 
-## ⚙️ Principes fondamentaux
+##  Principes fondamentaux
 
 ### États de lien
 
@@ -146,7 +140,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 📦 Types de paquets OSPF
+##  Types de paquets OSPF
 
 | Type | Nom | Description |
 |------|-----|-------------|
@@ -182,7 +176,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 🧩 Les LSA (Link-State Advertisements)
+##  Les LSA (Link-State Advertisements)
 
 | Type | Nom | Description |
 |------|-----|-------------|
@@ -206,7 +200,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 🗺️ Les zones OSPF
+##  Les zones OSPF
 
 ### Types de zones
 
@@ -227,7 +221,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 🖥️ Les types de routeurs
+##  Les types de routeurs
 
 | Type | Abréviation | Rôle |
 |------|-------------|------|
@@ -238,7 +232,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 🔁 Les états des voisins
+##  Les états des voisins
 
 | État | Description |
 |------|-------------|
@@ -260,7 +254,7 @@ L'algorithme construit un **arbre sans boucle** dont la racine est le routeur lo
 
 ---
 
-## 🏆 DR / BDR
+##  DR / BDR
 
 ### Pourquoi un DR ?
 
@@ -287,7 +281,7 @@ interface GigabitEthernet0/0
 
 ---
 
-## 📏 Métrique OSPF (Cost)
+##  Métrique OSPF (Cost)
 
 ```
 Cost = Reference Bandwidth / Interface Bandwidth
@@ -318,7 +312,7 @@ interface GigabitEthernet0/0
 
 ---
 
-## 🔐 Authentification
+##  Authentification
 
 ### Types
 
@@ -339,7 +333,7 @@ interface GigabitEthernet0/0
 
 ---
 
-## ⚙️ Configuration Cisco
+##  Configuration Cisco
 
 ### Configuration de base
 
@@ -392,7 +386,7 @@ router ospf 1
 
 ---
 
-## ⚙️ Configuration Juniper
+##  Configuration Juniper
 
 ```junos
 protocols {
@@ -415,7 +409,7 @@ protocols {
 
 ---
 
-## ⚙️ Configuration Huawei
+##  Configuration Huawei
 
 ```huawei
 ospf 1 router-id 1.1.1.1
@@ -429,7 +423,7 @@ ospf 1 router-id 1.1.1.1
 
 ---
 
-## 🌐 OSPFv3
+##  OSPFv3
 
 ### Configuration Cisco OSPFv3
 
@@ -452,7 +446,7 @@ ipv6 router ospf 1
 
 ---
 
-## 🌐 OSPF Multi-Area
+##  OSPF Multi-Area
 
 ### Pourquoi segmenter ?
 
@@ -469,7 +463,7 @@ ipv6 router ospf 1
 
 ---
 
-## 🌐 OSPF over NBMA
+##  OSPF over NBMA
 
 ### Modes NBMA
 
@@ -541,7 +535,7 @@ Get-NetRoute -AddressFamily IPv4
 
 ---
 
-## ⚔️ Comparaison avec d'autres protocoles
+##  Comparaison avec d'autres protocoles
 
 | Critère | OSPF | RIP | EIGRP | IS-IS |
 |---------|------|-----|-------|-------|
@@ -555,14 +549,6 @@ Get-NetRoute -AddressFamily IPv4
 
 ---
 
-## 💻 Cmatrix et style terminal
-
-Pour visualiser OSPF en mode "matrix" vert dans un terminal Linux/macOS/Windows WSL :
-
-```bash
-sudo apt install cmatrix
-cmatrix -C green -u 2
-```
 
 ### Script Python cmatrix-style
 
@@ -618,7 +604,7 @@ while True:
 
 ---
 
-## 📖 Glossaire
+##  Glossaire
 
 | Terme | Définition |
 |-------|------------|
@@ -635,21 +621,11 @@ while True:
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 OSPF reste le protocole IGP de référence pour les réseaux d'entreprise et les FAI. Sa robustesse, son ouverture et sa scalabilité en font un incontournable pour tout ingénieur réseau.
 
 > **Protocole maîtrisé = réseau maîtrisé.**  
 > — `hackers_tchad`
 
-```
-   ____  ____  _________  ________________  ____  ___   ____________  ______
-  / __ \/ __ \/ ____/   |/_  __/ ____/ __ )/ __ \/   | / ____/ __ \ \/ / __ \
- / / / / /_/ / /_  / /| | / / / __/ / __  / / / / /| |/ / __/ /_/ /\  / / / /
-/ /_/ / ____/ __/ / ___ |/ / / /___/ /_/ / /_/ / ___ / /_/ / _, _/ / / /_/ /
-\____/_/   /_/   /_/  |_/_/ /_____/_____/_____/_/  |_\____/_/ |_| /_/_____/
-```
-
----
-
-*Document créé par `hackers_tchad` — pour l'éducation, la recherche et l'administration réseau.*
+créé par `hackers_tchad` — pour l'éducation, la recherche et l'administration réseau.*
