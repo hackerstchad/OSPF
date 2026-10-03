@@ -1,5 +1,6 @@
 # `OSPF` — Open Shortest Path First
 
+<img width="1248" height="832" alt="OIG3 (11)" src="https://github.com/user-attachments/assets/3cdf7cb8-eb39-4773-b911-e26bdc8507a2" />
 
 
 > **Le protocole de routage à état de lien le plus déployé au monde.**  
@@ -576,7 +577,7 @@ while True:
 
 ---
 
-## 📖 Ressources, livres et liens
+##  Ressources, livres et liens
 
 ### Livres
 
